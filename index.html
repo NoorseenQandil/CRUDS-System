@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>CRUDS System</title>
+        <meta name="description" content="CRUDS System created by HTML, CSS, and java script">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Fontawesome CSS File -->
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <!-- Bootstrap CSS File -->
+        <link rel="stylesheet" href="CSS/bootstrap.min.css">
+        <!-- Main CSS File -->
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <div class="w-75 mx-auto bg-light rounded p-3 container">
+            <h1 class="text-center">CRUDS System</h1>
+            
+            <div>
+                <label for="productNameInput" class="font-monospace">Product Name:</label>
+                <input class="form-control" type="text" id="productNameInput">
+            </div>
+            <div>
+                <label for="productPriceInput" class="font-monospace">Product Price:</label>
+                <input class="form-control" type="number" id="productPriceInput">
+            </div>
+            <div>
+                <label for="productCategoryInput" class="font-monospace">Product Category:</label>
+                <input class="form-control" type="text" id="productCategoryInput">
+            </div>
+            <div>
+                <label for="productDescriptionInput" class="font-monospace">Product Description:</label>
+                <textarea class="form-control" id="productDescriptionInput"></textarea>
+            </div>
+
+            <button class="btn btn-primary my-3 w-100 text-capitalize" onclick="addProduct()" id="addBtn">add product</button>
+            <button class="btn btn-info my-3 w-100 text-capitalize d-none" onclick="updateProduct()" id="updateBtn">update product</button>
+            
+            <!-- Search Input -->
+            <input id="searchInput" oninput="searchProduct()" type="text" class="form-control my-3 w-75 mx-auto" placeholder="Search by name...">
+
+            <div class="table-responsive">
+            <table class="table table-striped my-3 text-center">
+                <thead>
+                    <th class="text-capitalize">Index</th>
+                    <th class="text-capitalize">name</th>
+                    <th class="text-capitalize">price</th>
+                    <th class="text-capitalize">category</th>
+                    <th class="text-capitalize">description</th>
+                    <th class="text-uppercase"> Update </th>
+                    <th class="text-uppercase">delete</th>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+          </div>
+        </div>
+            <!-- Bootstrap JS File -->
+        <script src="JS/bootstrap.bundle.min.js"></script>
+        <!-- JS Main File -->
+        <script src="JS/main.js"></script>
+    </body>
+</html>
