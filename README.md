@@ -5,7 +5,8 @@
  CRUDS System is to add data, update it, delete it and search in the saved data.
 
 ## Design
-![CRUDS Design](https://github.com/NoorseenQandil/CRUDS-System/assets/70522199/6bca38af-2ba7-4a56-875e-d4b41bdf80e3)
+![CRUDS Design](https://github.com/NoorseenQandil/CRUDS-System/assets/70522199/49415d3d-8505-4213-9d2c-c604e523bfc8)
+
 
 ## Features
 ### 1.User-Friendly Interface:
